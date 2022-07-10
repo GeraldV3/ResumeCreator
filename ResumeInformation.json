@@ -1,0 +1,33 @@
+{
+  "Basic Information": {
+    "FirstName": "Gerald",
+    "MiddleName": "V.",
+    "LastName": "Lopez",
+    "Picture": "",
+    "Email": "lopezgerald981@gmail.com",
+    "Phone": "09451675079",
+    "Address": "09 Grimaldo Apartment Soler Street Ext.",
+    "PostalCode": "4331",
+    "Municipality": "Atimonan",
+    "Province": "Quezon",
+    "College": "Polytechnic University of the Philippines",
+    "Course": "BS in Computer Engineering",
+    "CollegeGraduated": "Graduating July 2025",
+    "SeniorHighSchool": "Our Lady of the Angels Academy",
+    "SeniorHighSchoolGraduated": "Graduted May 2019",
+    "HighSchool": "Atimonan National Comprehensive High School",
+    "HighSchoolGraduated": "Graduated June 2017",
+    "Achievement": "Build and maintain a freelance video editing business to aid enterprises in local brand strategy.",
+    "Achievement1": "Develop creative advertising content for Motovlog, montage, travel vlog, and commercial products to increase target marketing strategy.",
+    "Experience": "Video Editor for Team Human Moto Vlog (2020-2022)",
+    "Contain": "Conduct the recording and editing of audio and video content for 50+ programs",
+    "Contain1": "It was classified and edited 3+ hours of raw recording into 15 minutes of refined video with a 95% client satisfaction rate and positive feedback.",
+    "Contain2": "Trimmed 50+ video fragments to required lengths and reconstructed them in a series of sequences that display stories with maximum effect.",
+    "Skills": "In-depth knowledge in Adobe Premiere Pro",
+    "Skills1": "In-depth knowledge in Adobe Photoshop",
+    "Skills2": "In-depth knowledge in Adobe Effects",
+    "Skills3": "Creativity",
+    "Skills4": "Time Management",
+    "Skills5": "Adaptability"
+  }
+}
