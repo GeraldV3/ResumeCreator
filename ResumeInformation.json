@@ -6,7 +6,7 @@
     "Picture": "",
     "Email": "lopezgerald981@gmail.com",
     "Phone": "09451675079",
-    "Address": "09 Grimaldo Apartment Soler Street Ext.",
+    "HomeAddress": "09 Grimaldo Apartment Soler Street Ext.",
     "PostalCode": "4331",
     "Municipality": "Atimonan",
     "Province": "Quezon",
@@ -28,6 +28,10 @@
     "Skills2": "In-depth knowledge in Adobe Effects",
     "Skills3": "Creativity",
     "Skills4": "Time Management",
-    "Skills5": "Adaptability"
+    "Skills5": "Adaptability",
+    "Hobby": "Video Games",
+    "Hobby1": "Live Streaming",
+    "Hobby2": "Video Editing",
+    "Hobby3": "Photo Editing"
   }
 }

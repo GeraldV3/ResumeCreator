@@ -1,0 +1,14 @@
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Resume Creator.exe.config
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Resume Creator.exe
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Resume Creator.pdb
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.SuggestedBindingRedirects.cache
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume_Creator.MainForm.resources
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume_Creator.Properties.Resources.resources
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.CopyComplete
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.exe
+C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.pdb
