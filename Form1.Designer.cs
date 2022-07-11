@@ -71,6 +71,10 @@
             this.Skills5_LBL = new System.Windows.Forms.Label();
             this.Skills4_LBL = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.Experience_LBL = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // FirstName_LBL
@@ -311,7 +315,7 @@
             // 
             this.Hobby_LBL.AutoSize = true;
             this.Hobby_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby_LBL.Location = new System.Drawing.Point(461, 164);
+            this.Hobby_LBL.Location = new System.Drawing.Point(417, 167);
             this.Hobby_LBL.Name = "Hobby_LBL";
             this.Hobby_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby_LBL.TabIndex = 27;
@@ -321,7 +325,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(461, 177);
+            this.label11.Location = new System.Drawing.Point(417, 180);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 13);
             this.label11.TabIndex = 26;
@@ -330,7 +334,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(461, 190);
+            this.label12.Location = new System.Drawing.Point(417, 193);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(0, 13);
             this.label12.TabIndex = 25;
@@ -339,7 +343,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(461, 164);
+            this.label13.Location = new System.Drawing.Point(417, 167);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 24;
@@ -348,7 +352,7 @@
             // 
             this.Hobby1_LBL.AutoSize = true;
             this.Hobby1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby1_LBL.Location = new System.Drawing.Point(461, 179);
+            this.Hobby1_LBL.Location = new System.Drawing.Point(417, 182);
             this.Hobby1_LBL.Name = "Hobby1_LBL";
             this.Hobby1_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby1_LBL.TabIndex = 28;
@@ -358,7 +362,7 @@
             // 
             this.Hobby2_LBL.AutoSize = true;
             this.Hobby2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby2_LBL.Location = new System.Drawing.Point(461, 195);
+            this.Hobby2_LBL.Location = new System.Drawing.Point(417, 198);
             this.Hobby2_LBL.Name = "Hobby2_LBL";
             this.Hobby2_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby2_LBL.TabIndex = 29;
@@ -368,7 +372,7 @@
             // 
             this.Hobby3_LBL.AutoSize = true;
             this.Hobby3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby3_LBL.Location = new System.Drawing.Point(461, 209);
+            this.Hobby3_LBL.Location = new System.Drawing.Point(417, 212);
             this.Hobby3_LBL.Name = "Hobby3_LBL";
             this.Hobby3_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby3_LBL.TabIndex = 30;
@@ -378,7 +382,7 @@
             // 
             this.Achievement_LBL.AutoSize = true;
             this.Achievement_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Achievement_LBL.Location = new System.Drawing.Point(461, 278);
+            this.Achievement_LBL.Location = new System.Drawing.Point(417, 411);
             this.Achievement_LBL.Name = "Achievement_LBL";
             this.Achievement_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement_LBL.TabIndex = 31;
@@ -388,7 +392,7 @@
             // 
             this.Achievement1_LBL.AutoSize = true;
             this.Achievement1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Achievement1_LBL.Location = new System.Drawing.Point(461, 361);
+            this.Achievement1_LBL.Location = new System.Drawing.Point(417, 447);
             this.Achievement1_LBL.Name = "Achievement1_LBL";
             this.Achievement1_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement1_LBL.TabIndex = 32;
@@ -398,7 +402,7 @@
             // 
             this.Skills3_LBL.AutoSize = true;
             this.Skills3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills3_LBL.Location = new System.Drawing.Point(461, 543);
+            this.Skills3_LBL.Location = new System.Drawing.Point(417, 568);
             this.Skills3_LBL.Name = "Skills3_LBL";
             this.Skills3_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills3_LBL.TabIndex = 39;
@@ -408,7 +412,7 @@
             // 
             this.Skills2_LBL.AutoSize = true;
             this.Skills2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills2_LBL.Location = new System.Drawing.Point(461, 525);
+            this.Skills2_LBL.Location = new System.Drawing.Point(417, 550);
             this.Skills2_LBL.Name = "Skills2_LBL";
             this.Skills2_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills2_LBL.TabIndex = 38;
@@ -418,7 +422,7 @@
             // 
             this.Skills1_LBL.AutoSize = true;
             this.Skills1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills1_LBL.Location = new System.Drawing.Point(461, 508);
+            this.Skills1_LBL.Location = new System.Drawing.Point(417, 533);
             this.Skills1_LBL.Name = "Skills1_LBL";
             this.Skills1_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills1_LBL.TabIndex = 37;
@@ -428,7 +432,7 @@
             // 
             this.Skills_LBL.AutoSize = true;
             this.Skills_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills_LBL.Location = new System.Drawing.Point(461, 491);
+            this.Skills_LBL.Location = new System.Drawing.Point(417, 516);
             this.Skills_LBL.Name = "Skills_LBL";
             this.Skills_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills_LBL.TabIndex = 36;
@@ -465,7 +469,7 @@
             // 
             this.Skills5_LBL.AutoSize = true;
             this.Skills5_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills5_LBL.Location = new System.Drawing.Point(461, 580);
+            this.Skills5_LBL.Location = new System.Drawing.Point(417, 605);
             this.Skills5_LBL.Name = "Skills5_LBL";
             this.Skills5_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills5_LBL.TabIndex = 42;
@@ -475,7 +479,7 @@
             // 
             this.Skills4_LBL.AutoSize = true;
             this.Skills4_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills4_LBL.Location = new System.Drawing.Point(461, 562);
+            this.Skills4_LBL.Location = new System.Drawing.Point(417, 587);
             this.Skills4_LBL.Name = "Skills4_LBL";
             this.Skills4_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills4_LBL.TabIndex = 41;
@@ -490,12 +494,56 @@
             this.label20.Size = new System.Drawing.Size(0, 13);
             this.label20.TabIndex = 40;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(417, 304);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(54, 13);
+            this.label10.TabIndex = 44;
+            this.label10.Text = "Contain:";
+            // 
+            // Experience_LBL
+            // 
+            this.Experience_LBL.AutoSize = true;
+            this.Experience_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Experience_LBL.Location = new System.Drawing.Point(417, 285);
+            this.Experience_LBL.Name = "Experience_LBL";
+            this.Experience_LBL.Size = new System.Drawing.Size(68, 13);
+            this.Experience_LBL.TabIndex = 43;
+            this.Experience_LBL.Text = "Experience:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(417, 337);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "Contain:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(417, 319);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Contain:";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background3;
+            this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background13;
             this.ClientSize = new System.Drawing.Size(784, 650);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Experience_LBL);
             this.Controls.Add(this.Skills5_LBL);
             this.Controls.Add(this.Skills4_LBL);
             this.Controls.Add(this.label20);
@@ -591,6 +639,10 @@
         private System.Windows.Forms.Label Skills5_LBL;
         private System.Windows.Forms.Label Skills4_LBL;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label Experience_LBL;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
     }
 }
 
