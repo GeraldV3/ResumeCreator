@@ -17,14 +17,18 @@ namespace Resume_Creator
         public MainForm()
         {
             InitializeComponent();
-            string filename = "resumeinformation.json";
+        }
+        private void Read_BTN_Click(object sender, EventArgs e)
+        {
+            string filename = "ResumeInformation.json";
             string JSONFILE = File.ReadAllText(filename);
             ResumeInformation Resume = JsonSerializer.Deserialize<ResumeInformation>(JSONFILE);
-
             //Basic Information
             string FirstName = Resume.FirstName;
             string LastName = Resume.LastName;
             string MiddleName = Resume.MiddleName;
+            string Email = Resume.Email;
+            string PhoneNumber = Resume.PhoneNumber;
             //Address
             string HomeAdress = Resume.HomeAddress;
             string PostalCode = Resume.PostalCode;
@@ -58,6 +62,40 @@ namespace Resume_Creator
             string Hobby1 = Resume.Hobby1;
             string Hobby2 = Resume.Hobby2;
             string Hobby3 = Resume.Hobby3;
+
+            FirstName_LBL.Text = "First Name: " + Resume.FirstName;
+            LastName_LBL.Text = "Last Name: " + Resume.LastName;
+            MiddleName_LBL.Text = "MiddleName: " + Resume.LastName;
+            Email_LBL.Text = "Email: " + Resume.Email;
+            PhoneNumber_LBL.Text = "PhoneNumber: " + Resume.PhoneNumber;
+            HomeAddress_LBL.Text = "HomeAddress: " + Resume.HomeAddress;
+            Postal_LBL.Text = "Postal: " + Resume.PostalCode;
+            Municipality_LBL.Text = "Municipality: " + Resume.Municipality;
+            Province_LBL.Text = "Provicne: " + Resume.Province;
+            College_LBL.Text = "College: " + Resume.College;
+            Course_LBL.Text = "Course: " + Resume.Course;
+            GraduatedYear_LBL.Text = "GreaduatedYear: " + Resume.CollegeGraduated;
+            SHS_LBL.Text = "SeniorHighSchool: " + Resume.SeniorHighSchool;
+            Strand_LBL.Text = "Strand: " + Resume.Strand;
+            GraduatedYear1_LBL.Text = "GreaduatedYear: " + Resume.SeniorHighSchoolGraduated;
+            HS_LBL.Text = "High School: " + Resume.HighSchool;
+            GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.HighSchoolGraduated;
+            Achievement_LBL.Text = "Achievement: " + Resume.Achievement;
+            Achievement1_LBL.Text = "Achievement: " + Resume.Achievement1;
+            Experience_LBL.Text = "Exprience: " + Resume.Experience;
+            Contain_LBL.Text = "Contain: " + Resume.Contain;
+            Contain1_LBL.Text = "Contain: " + Resume.Contain1;
+            Contain2_LBL.Text = "Contain: " + Resume.Contain2;
+            Skills_LBL.Text = "Skills: " + Resume.Skills;
+            Skills1_LBL.Text = "Skills: " + Resume.Skills1;
+            Skills2_LBL.Text = "Skills: " + Resume.Skills2;
+            Skills3_LBL.Text = "Skills: " + Resume.Skills3;
+            Skills4_LBL.Text = "Skills: " + Resume.Skills4;
+            Skills5_LBL.Text = "Skills: " + Resume.Skills5;
+            Hobby_LBL.Text = "Hobby: " + Resume.Hobby;
+            Hobby1_LBL.Text = "Hobby: " + Resume.Hobby1;
+            Hobby2_LBL.Text = "Hobby: " + Resume.Hobby2;
+            Hobby3_LBL.Text = "Hobby: " + Resume.Hobby3;
         }
     }
     public class ResumeInformation
@@ -66,6 +104,8 @@ namespace Resume_Creator
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
+        public string Email { get; set; }
+        public string PhoneNumber { get; set; }
         //Address
         public string HomeAddress { get; set; }
         public string PostalCode { get; set; }

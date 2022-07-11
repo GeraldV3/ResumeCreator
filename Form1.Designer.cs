@@ -38,7 +38,7 @@
             this.Province_LBL = new System.Windows.Forms.Label();
             this.Municipality_LBL = new System.Windows.Forms.Label();
             this.College_LBL = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.GraduatedYear_LBL = new System.Windows.Forms.Label();
             this.Course_LBL = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,12 +46,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.Course1_LBL = new System.Windows.Forms.Label();
+            this.Strand_LBL = new System.Windows.Forms.Label();
             this.GraduatedYear1_LBL = new System.Windows.Forms.Label();
-            this.College1_LBL = new System.Windows.Forms.Label();
-            this.Course2_LBL = new System.Windows.Forms.Label();
+            this.SHS_LBL = new System.Windows.Forms.Label();
             this.GraduatedYear2_LBL = new System.Windows.Forms.Label();
-            this.College2_LBL = new System.Windows.Forms.Label();
+            this.HS_LBL = new System.Windows.Forms.Label();
             this.Hobby_LBL = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -71,10 +70,12 @@
             this.Skills5_LBL = new System.Windows.Forms.Label();
             this.Skills4_LBL = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Contain_LBL = new System.Windows.Forms.Label();
             this.Experience_LBL = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Contain2_LBL = new System.Windows.Forms.Label();
+            this.Contain1_LBL = new System.Windows.Forms.Label();
+            this.Read_BTN = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).BeginInit();
             this.SuspendLayout();
             // 
             // FirstName_LBL
@@ -177,15 +178,15 @@
             this.College_LBL.TabIndex = 9;
             this.College_LBL.Text = "College:";
             // 
-            // label1
+            // GraduatedYear_LBL
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 438);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "GraduatedYear";
+            this.GraduatedYear_LBL.AutoSize = true;
+            this.GraduatedYear_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GraduatedYear_LBL.Location = new System.Drawing.Point(32, 438);
+            this.GraduatedYear_LBL.Name = "GraduatedYear_LBL";
+            this.GraduatedYear_LBL.Size = new System.Drawing.Size(86, 13);
+            this.GraduatedYear_LBL.TabIndex = 10;
+            this.GraduatedYear_LBL.Text = "GraduatedYear";
             // 
             // Course_LBL
             // 
@@ -251,15 +252,15 @@
             this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 15;
             // 
-            // Course1_LBL
+            // Strand_LBL
             // 
-            this.Course1_LBL.AutoSize = true;
-            this.Course1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course1_LBL.Location = new System.Drawing.Point(32, 500);
-            this.Course1_LBL.Name = "Course1_LBL";
-            this.Course1_LBL.Size = new System.Drawing.Size(49, 13);
-            this.Course1_LBL.TabIndex = 20;
-            this.Course1_LBL.Text = "Course:";
+            this.Strand_LBL.AutoSize = true;
+            this.Strand_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Strand_LBL.Location = new System.Drawing.Point(32, 500);
+            this.Strand_LBL.Name = "Strand_LBL";
+            this.Strand_LBL.Size = new System.Drawing.Size(46, 13);
+            this.Strand_LBL.TabIndex = 20;
+            this.Strand_LBL.Text = "Strand:";
             // 
             // GraduatedYear1_LBL
             // 
@@ -271,45 +272,35 @@
             this.GraduatedYear1_LBL.TabIndex = 19;
             this.GraduatedYear1_LBL.Text = "GraduatedYear:";
             // 
-            // College1_LBL
+            // SHS_LBL
             // 
-            this.College1_LBL.AutoSize = true;
-            this.College1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.College1_LBL.Location = new System.Drawing.Point(32, 487);
-            this.College1_LBL.Name = "College1_LBL";
-            this.College1_LBL.Size = new System.Drawing.Size(52, 13);
-            this.College1_LBL.TabIndex = 18;
-            this.College1_LBL.Text = "College:";
-            // 
-            // Course2_LBL
-            // 
-            this.Course2_LBL.AutoSize = true;
-            this.Course2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course2_LBL.Location = new System.Drawing.Point(32, 574);
-            this.Course2_LBL.Name = "Course2_LBL";
-            this.Course2_LBL.Size = new System.Drawing.Size(49, 13);
-            this.Course2_LBL.TabIndex = 23;
-            this.Course2_LBL.Text = "Course:";
+            this.SHS_LBL.AutoSize = true;
+            this.SHS_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SHS_LBL.Location = new System.Drawing.Point(32, 487);
+            this.SHS_LBL.Name = "SHS_LBL";
+            this.SHS_LBL.Size = new System.Drawing.Size(109, 13);
+            this.SHS_LBL.TabIndex = 18;
+            this.SHS_LBL.Text = "Senior High School";
             // 
             // GraduatedYear2_LBL
             // 
             this.GraduatedYear2_LBL.AutoSize = true;
             this.GraduatedYear2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GraduatedYear2_LBL.Location = new System.Drawing.Point(32, 587);
+            this.GraduatedYear2_LBL.Location = new System.Drawing.Point(32, 574);
             this.GraduatedYear2_LBL.Name = "GraduatedYear2_LBL";
             this.GraduatedYear2_LBL.Size = new System.Drawing.Size(90, 13);
             this.GraduatedYear2_LBL.TabIndex = 22;
             this.GraduatedYear2_LBL.Text = "GraduatedYear:";
             // 
-            // College2_LBL
+            // HS_LBL
             // 
-            this.College2_LBL.AutoSize = true;
-            this.College2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.College2_LBL.Location = new System.Drawing.Point(32, 561);
-            this.College2_LBL.Name = "College2_LBL";
-            this.College2_LBL.Size = new System.Drawing.Size(52, 13);
-            this.College2_LBL.TabIndex = 21;
-            this.College2_LBL.Text = "College:";
+            this.HS_LBL.AutoSize = true;
+            this.HS_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HS_LBL.Location = new System.Drawing.Point(32, 561);
+            this.HS_LBL.Name = "HS_LBL";
+            this.HS_LBL.Size = new System.Drawing.Size(75, 13);
+            this.HS_LBL.TabIndex = 21;
+            this.HS_LBL.Text = "High School:";
             // 
             // Hobby_LBL
             // 
@@ -494,15 +485,15 @@
             this.label20.Size = new System.Drawing.Size(0, 13);
             this.label20.TabIndex = 40;
             // 
-            // label10
+            // Contain_LBL
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(417, 304);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(54, 13);
-            this.label10.TabIndex = 44;
-            this.label10.Text = "Contain:";
+            this.Contain_LBL.AutoSize = true;
+            this.Contain_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contain_LBL.Location = new System.Drawing.Point(417, 304);
+            this.Contain_LBL.Name = "Contain_LBL";
+            this.Contain_LBL.Size = new System.Drawing.Size(54, 13);
+            this.Contain_LBL.TabIndex = 44;
+            this.Contain_LBL.Text = "Contain:";
             // 
             // Experience_LBL
             // 
@@ -514,35 +505,46 @@
             this.Experience_LBL.TabIndex = 43;
             this.Experience_LBL.Text = "Experience:";
             // 
-            // label2
+            // Contain2_LBL
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(417, 337);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
-            this.label2.TabIndex = 45;
-            this.label2.Text = "Contain:";
+            this.Contain2_LBL.AutoSize = true;
+            this.Contain2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contain2_LBL.Location = new System.Drawing.Point(417, 337);
+            this.Contain2_LBL.Name = "Contain2_LBL";
+            this.Contain2_LBL.Size = new System.Drawing.Size(54, 13);
+            this.Contain2_LBL.TabIndex = 45;
+            this.Contain2_LBL.Text = "Contain:";
             // 
-            // label9
+            // Contain1_LBL
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(417, 319);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Contain:";
+            this.Contain1_LBL.AutoSize = true;
+            this.Contain1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Contain1_LBL.Location = new System.Drawing.Point(417, 321);
+            this.Contain1_LBL.Name = "Contain1_LBL";
+            this.Contain1_LBL.Size = new System.Drawing.Size(54, 13);
+            this.Contain1_LBL.TabIndex = 46;
+            this.Contain1_LBL.Text = "Contain:";
+            // 
+            // Read_BTN
+            // 
+            this.Read_BTN.Image = global::Resume_Creator.Properties.Resources.Read;
+            this.Read_BTN.Location = new System.Drawing.Point(640, 592);
+            this.Read_BTN.Name = "Read_BTN";
+            this.Read_BTN.Size = new System.Drawing.Size(132, 29);
+            this.Read_BTN.TabIndex = 49;
+            this.Read_BTN.TabStop = false;
+            this.Read_BTN.Click += new System.EventHandler(this.Read_BTN_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background13;
-            this.ClientSize = new System.Drawing.Size(784, 650);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label10);
+            this.ClientSize = new System.Drawing.Size(784, 658);
+            this.Controls.Add(this.Read_BTN);
+            this.Controls.Add(this.Contain1_LBL);
+            this.Controls.Add(this.Contain2_LBL);
+            this.Controls.Add(this.Contain_LBL);
             this.Controls.Add(this.Experience_LBL);
             this.Controls.Add(this.Skills5_LBL);
             this.Controls.Add(this.Skills4_LBL);
@@ -563,12 +565,11 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.Course2_LBL);
             this.Controls.Add(this.GraduatedYear2_LBL);
-            this.Controls.Add(this.College2_LBL);
-            this.Controls.Add(this.Course1_LBL);
+            this.Controls.Add(this.HS_LBL);
+            this.Controls.Add(this.Strand_LBL);
             this.Controls.Add(this.GraduatedYear1_LBL);
-            this.Controls.Add(this.College1_LBL);
+            this.Controls.Add(this.SHS_LBL);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
@@ -576,7 +577,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Course_LBL);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.GraduatedYear_LBL);
             this.Controls.Add(this.College_LBL);
             this.Controls.Add(this.Municipality_LBL);
             this.Controls.Add(this.Province_LBL);
@@ -589,6 +590,7 @@
             this.Controls.Add(this.FirstName_LBL);
             this.Name = "MainForm";
             this.Text = "Generate to PDF";
+            ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -606,7 +608,7 @@
         private System.Windows.Forms.Label Province_LBL;
         private System.Windows.Forms.Label Municipality_LBL;
         private System.Windows.Forms.Label College_LBL;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label GraduatedYear_LBL;
         private System.Windows.Forms.Label Course_LBL;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -614,12 +616,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label Course1_LBL;
+        private System.Windows.Forms.Label Strand_LBL;
         private System.Windows.Forms.Label GraduatedYear1_LBL;
-        private System.Windows.Forms.Label College1_LBL;
-        private System.Windows.Forms.Label Course2_LBL;
+        private System.Windows.Forms.Label SHS_LBL;
         private System.Windows.Forms.Label GraduatedYear2_LBL;
-        private System.Windows.Forms.Label College2_LBL;
+        private System.Windows.Forms.Label HS_LBL;
         private System.Windows.Forms.Label Hobby_LBL;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -639,10 +640,11 @@
         private System.Windows.Forms.Label Skills5_LBL;
         private System.Windows.Forms.Label Skills4_LBL;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label Contain_LBL;
         private System.Windows.Forms.Label Experience_LBL;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Contain2_LBL;
+        private System.Windows.Forms.Label Contain1_LBL;
+        private System.Windows.Forms.PictureBox Read_BTN;
     }
 }
 
