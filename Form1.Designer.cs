@@ -541,7 +541,6 @@
             this.Controls.Add(this.FirstName_LBL);
             this.Name = "MainForm";
             this.Text = "Generate to PDF";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

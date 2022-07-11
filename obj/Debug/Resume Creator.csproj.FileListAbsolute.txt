@@ -12,3 +12,21 @@ C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.CoreCompileIn
 C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.csproj.CopyComplete
 C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.exe
 C:\Users\pc\Desktop\Resume Creator\obj\Debug\Resume Creator.pdb
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Buffers.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Memory.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Json.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.ValueTuple.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Buffers.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Memory.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Json.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.ValueTuple.xml
