@@ -1,6 +1,6 @@
 {
-  "Basic Information": {
-    "FirstName": "Gerald",
+  "Basic Information":
+    "firstName": "Gerald",
     "MiddleName": "V.",
     "LastName": "Lopez",
     "Picture": "",
@@ -34,5 +34,4 @@
     "Hobby1": "Live Streaming",
     "Hobby2": "Video Editing",
     "Hobby3": "Photo Editing"
-  }
 }

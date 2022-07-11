@@ -75,7 +75,9 @@
             this.Contain2_LBL = new System.Windows.Forms.Label();
             this.Contain1_LBL = new System.Windows.Forms.Label();
             this.Read_BTN = new System.Windows.Forms.PictureBox();
+            this.Generate_BTN = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Generate_BTN)).BeginInit();
             this.SuspendLayout();
             // 
             // FirstName_LBL
@@ -527,7 +529,7 @@
             // 
             // Read_BTN
             // 
-            this.Read_BTN.Image = global::Resume_Creator.Properties.Resources.Read;
+            this.Read_BTN.Image = global::Resume_Creator.Properties.Resources.Read2;
             this.Read_BTN.Location = new System.Drawing.Point(640, 592);
             this.Read_BTN.Name = "Read_BTN";
             this.Read_BTN.Size = new System.Drawing.Size(132, 29);
@@ -535,12 +537,24 @@
             this.Read_BTN.TabStop = false;
             this.Read_BTN.Click += new System.EventHandler(this.Read_BTN_Click);
             // 
+            // Generate_BTN
+            // 
+            this.Generate_BTN.Image = global::Resume_Creator.Properties.Resources.Generate4;
+            this.Generate_BTN.Location = new System.Drawing.Point(640, 632);
+            this.Generate_BTN.Name = "Generate_BTN";
+            this.Generate_BTN.Size = new System.Drawing.Size(132, 41);
+            this.Generate_BTN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Generate_BTN.TabIndex = 50;
+            this.Generate_BTN.TabStop = false;
+            this.Generate_BTN.Click += new System.EventHandler(this.Generate_BTN_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background13;
-            this.ClientSize = new System.Drawing.Size(784, 658);
+            this.ClientSize = new System.Drawing.Size(784, 676);
+            this.Controls.Add(this.Generate_BTN);
             this.Controls.Add(this.Read_BTN);
             this.Controls.Add(this.Contain1_LBL);
             this.Controls.Add(this.Contain2_LBL);
@@ -591,6 +605,7 @@
             this.Name = "MainForm";
             this.Text = "Generate to PDF";
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Generate_BTN)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -645,6 +660,7 @@
         private System.Windows.Forms.Label Contain2_LBL;
         private System.Windows.Forms.Label Contain1_LBL;
         private System.Windows.Forms.PictureBox Read_BTN;
+        private System.Windows.Forms.PictureBox Generate_BTN;
     }
 }
 

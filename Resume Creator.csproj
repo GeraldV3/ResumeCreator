@@ -121,6 +121,12 @@
   <ItemGroup>
     <None Include="Picture and Sounds\Background1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture and Sounds\Read.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Picture and Sounds\Generate.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Text.Json.6.0.5\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
