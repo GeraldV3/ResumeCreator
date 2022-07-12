@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Text.Json;
 using System.IO;
+using PdfSharp;
+using PdfSharp.Pdf;
+using PdfSharp.Drawing;
 
 namespace Resume_Creator
 {
@@ -22,8 +25,8 @@ namespace Resume_Creator
         }
         private void Read_BTN_Click(object sender, EventArgs e)
         {
-           try
-           {
+            try
+            {
                 string jsonFromFile;
                 using (var readr = new StreamReader(path))
                 {
@@ -31,78 +34,78 @@ namespace Resume_Creator
                 }
                 ResumeInformation Resume = JsonSerializer.Deserialize<ResumeInformation>(jsonFromFile);
                 //Basic Information
-                string FirstName = Resume.FirstName;
-                string LastName = Resume.LastName;
-                string MiddleName = Resume.MiddleName;
-                string Email = Resume.Email;
-                string PhoneNumber = Resume.PhoneNumber;
+                string firstname = Resume.firstname;
+                string lastname = Resume.lastname;
+                string middlename = Resume.middlename;
+                string Email = Resume.email;
+                string phonenumber = Resume.phonenumber;
                 //Address
-                string HomeAdress = Resume.HomeAddress;
-                string PostalCode = Resume.PostalCode;
-                string Municipality = Resume.Municipality;
-                string Province = Resume.Province;
+                string homeaddress = Resume.homeaddress;
+                string postalcode = Resume.postalcode;
+                string municipality = Resume.municipality;
+                string province = Resume.province;
                 //Education
-                string College = Resume.College;
-                string Courge = Resume.Course;
-                string CollegeGraduated = Resume.CollegeGraduated;
-                string SeniorHighSchool = Resume.SeniorHighSchool;
-                string Strand = Resume.Strand;
-                string SeniorHighSchoolGraduated = Resume.SeniorHighSchoolGraduated;
-                string HighSchool = Resume.HighSchool;
+                string college = Resume.college;
+                string courge = Resume.course;
+                string collegegraduated = Resume.collegegraduated;
+                string seniorhighschool = Resume.seniorhighschool;
+                string strand = Resume.strand;
+                string seniorhighschoolgraduated = Resume.seniorhighschoolgraduated;
+                string highschool = Resume.highschool;
                 //Achievement
-                string Achievement = Resume.Achievement;
-                string Achievement1 = Resume.Achievement1;
+                string achievement = Resume.achievement;
+                string achievement1 = Resume.achievement1;
                 //Experience
-                string Experience = Resume.Experience;
-                string Contain = Resume.Contain;
-                string Contain1 = Resume.Contain1;
-                string Contain2 = Resume.Contain2;
+                string experience = Resume.experience;
+                string contain = Resume.contain;
+                string contain1 = Resume.contain1;
+                string contain2 = Resume.contain2;
                 //Skills
-                string Skills = Resume.Skills;
-                string Skills1 = Resume.Skills1;
-                string Skills2 = Resume.Skills2;
-                string Skills3 = Resume.Skills3;
-                string Skills4 = Resume.Skills4;
-                string Skills5 = Resume.Skills5;
+                string skills = Resume.skills;
+                string skills1 = Resume.skills1;
+                string skills2 = Resume.skills2;
+                string skills3 = Resume.skills3;
+                string skills4 = Resume.skills4;
+                string skills5 = Resume.skills5;
                 //Hobby
-                string Hobby = Resume.Hobby;
-                string Hobby1 = Resume.Hobby1;
-                string Hobby2 = Resume.Hobby2;
-                string Hobby3 = Resume.Hobby3;
+                string hobby = Resume.hobby;
+                string hobby1 = Resume.hobby1;
+                string hobby2 = Resume.hobby2;
+                string hobby3 = Resume.hobby3;
 
-                FirstName_LBL.Text = "First Name: " + Resume.FirstName;
-                LastName_LBL.Text = "Last Name: " + Resume.LastName;
-                MiddleName_LBL.Text = "MiddleName: " + Resume.LastName;
-                Email_LBL.Text = "Email: " + Resume.Email;
-                PhoneNumber_LBL.Text = "PhoneNumber: " + Resume.PhoneNumber;
-                HomeAddress_LBL.Text = "HomeAddress: " + Resume.HomeAddress;
-                Postal_LBL.Text = "Postal: " + Resume.PostalCode;
-                Municipality_LBL.Text = "Municipality: " + Resume.Municipality;
-                Province_LBL.Text = "Provicne: " + Resume.Province;
-                College_LBL.Text = "College: " + Resume.College;
-                Course_LBL.Text = "Course: " + Resume.Course;
-                GraduatedYear_LBL.Text = "GreaduatedYear: " + Resume.CollegeGraduated;
-                SHS_LBL.Text = "SeniorHighSchool: " + Resume.SeniorHighSchool;
-                Strand_LBL.Text = "Strand: " + Resume.Strand;
-                GraduatedYear1_LBL.Text = "GreaduatedYear: " + Resume.SeniorHighSchoolGraduated;
-                HS_LBL.Text = "High School: " + Resume.HighSchool;
-                GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.HighSchoolGraduated;
-                Achievement_LBL.Text = "Achievement: " + Resume.Achievement;
-                Achievement1_LBL.Text = "Achievement: " + Resume.Achievement1;
-                Experience_LBL.Text = "Exprience: " + Resume.Experience;
-                Contain_LBL.Text = "Contain: " + Resume.Contain;
-                Contain1_LBL.Text = "Contain: " + Resume.Contain1;
-                Contain2_LBL.Text = "Contain: " + Resume.Contain2;
-                Skills_LBL.Text = "Skills: " + Resume.Skills;
-                Skills1_LBL.Text = "Skills: " + Resume.Skills1;
-                Skills2_LBL.Text = "Skills: " + Resume.Skills2;
-                Skills3_LBL.Text = "Skills: " + Resume.Skills3;
-                Skills4_LBL.Text = "Skills: " + Resume.Skills4;
-                Skills5_LBL.Text = "Skills: " + Resume.Skills5;
-                Hobby_LBL.Text = "Hobby: " + Resume.Hobby;
-                Hobby1_LBL.Text = "Hobby: " + Resume.Hobby1;
-                Hobby2_LBL.Text = "Hobby: " + Resume.Hobby2;
-                Hobby3_LBL.Text = "Hobby: " + Resume.Hobby3;
+                FirstName_LBL.Text = "First Name: " + Resume.firstname;
+                LastName_LBL.Text = "Last Name: " + Resume.lastname;
+                MiddleName_LBL.Text = "MiddleName: " + Resume.middlename;
+                Email_LBL.Text = "Email: " + Resume.email;
+                PhoneNumber_LBL.Text = "PhoneNumber: " + Resume.phonenumber;
+                HomeAddress_LBL.Text = "HomeAddress: " + Resume.homeaddress;
+                Postal_LBL.Text = "Postal: " + Resume.postalcode;
+                Municipality_LBL.Text = "Municipality: " + Resume.municipality;
+                Province_LBL.Text = "Provicne: " + Resume.province;
+                College_LBL.Text = "College: " + Resume.college;
+                Course_LBL.Text = "Course: " + Resume.course;
+                GraduatedYear_LBL.Text = "GreaduatedYear: " + Resume.collegegraduated;
+                SHS_LBL.Text = "SeniorHighSchool: " + Resume.seniorhighschool;
+                Strand_LBL.Text = "Strand: " + Resume.strand;
+                GraduatedYear1_LBL.Text = "GreaduatedYear: " + Resume.seniorhighschoolgraduated;
+                HS_LBL.Text = "High School: " + Resume.highschool;
+                GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.highschoolgraduated;
+                Achievement_LBL.Text = "Achievement: " + Resume.achievement;
+                Achievement1_LBL.Text = "Achievement: " + Resume.achievement1;
+                Experience_LBL.Text = "Exprience: " + Resume.experience;
+                Contain_LBL.Text = "Contain: " + Resume.contain;
+                Contain1_LBL.Text = "Contain: " + Resume.contain1;
+                Contain2_LBL.Text = "Contain: " + Resume.contain2;
+                Skills_LBL.Text = "Skills: " + Resume.skills;
+                Skills1_LBL.Text = "Skills: " + Resume.skills1;
+                Skills2_LBL.Text = "Skills: " + Resume.skills2;
+                Skills3_LBL.Text = "Skills: " + Resume.skills3;
+                Skills4_LBL.Text = "Skills: " + Resume.skills4;
+                Skills5_LBL.Text = "Skills: " + Resume.skills5;
+                Hobby_LBL.Text = "Hobby: " + Resume.hobby;
+                Hobby1_LBL.Text = "Hobby: " + Resume.hobby1;
+                Hobby2_LBL.Text = "Hobby: " + Resume.hobby2;
+                Hobby3_LBL.Text = "Hobby: " + Resume.hobby3;
             }
             catch
             {
@@ -111,126 +114,125 @@ namespace Resume_Creator
         }
         private void Generate_BTN_Click(object sender, EventArgs e)
         {
-            //string JSONFILE = File.ReadAllText(@"C\Users\pc\Desktop\Resume Creator\ResumeInformation.json");
             string filename = @"C:\Users\pc\Desktop\Resume Creator\ResumeInformation.json";
             string JSONFILE = File.ReadAllText(filename);
             ResumeInformation Resume = JsonSerializer.Deserialize<ResumeInformation>(JSONFILE);
             //Basic Information
-            string FirstName = Resume.FirstName;
-            string LastName = Resume.LastName;
-            string MiddleName = Resume.MiddleName;
-            string Email = Resume.Email;
-            string PhoneNumber = Resume.PhoneNumber;
+            string firstname = Resume.firstname;
+            string lastname = Resume.lastname;
+            string middlename = Resume.middlename;
+            string Email = Resume.email;
+            string phonenumber = Resume.phonenumber;
             //Address
-            string HomeAdress = Resume.HomeAddress;
-            string PostalCode = Resume.PostalCode;
-            string Municipality = Resume.Municipality;
-            string Province = Resume.Province;
+            string homeaddress = Resume.homeaddress;
+            string postalcode = Resume.postalcode;
+            string municipality = Resume.municipality;
+            string province = Resume.province;
             //Education
-            string College = Resume.College;
-            string Courge = Resume.Course;
-            string CollegeGraduated = Resume.CollegeGraduated;
-            string SeniorHighSchool = Resume.SeniorHighSchool;
-            string Strand = Resume.Strand;
-            string SeniorHighSchoolGraduated = Resume.SeniorHighSchoolGraduated;
-            string HighSchool = Resume.HighSchool;
+            string college = Resume.college;
+            string courge = Resume.course;
+            string collegegraduated = Resume.collegegraduated;
+            string seniorhighschool = Resume.seniorhighschool;
+            string strand = Resume.strand;
+            string seniorhighschoolgraduated = Resume.seniorhighschoolgraduated;
+            string highschool = Resume.highschool;     
             //Achievement
-            string Achievement = Resume.Achievement;
-            string Achievement1 = Resume.Achievement1;
+            string achievement = Resume.achievement;
+            string achievement1 = Resume.achievement1;
             //Experience
-            string Experience = Resume.Experience;
-            string Contain = Resume.Contain;
-            string Contain1 = Resume.Contain1;
-            string Contain2 = Resume.Contain2;
+            string experience = Resume.experience;
+            string contain = Resume.contain;
+            string contain1 = Resume.contain1;
+            string contain2 = Resume.contain2;
             //Skills
-            string Skills = Resume.Skills;
-            string Skills1 = Resume.Skills1;
-            string Skills2 = Resume.Skills2;
-            string Skills3 = Resume.Skills3;
-            string Skills4 = Resume.Skills4;
-            string Skills5 = Resume.Skills5;
+            string skills = Resume.skills;
+            string skills1 = Resume.skills1;
+            string skills2 = Resume.skills2;
+            string skills3 = Resume.skills3;
+            string skills4 = Resume.skills4;
+            string skills5 = Resume.skills5;
             //Hobby
-            string Hobby = Resume.Hobby;
-            string Hobby1 = Resume.Hobby1;
-            string Hobby2 = Resume.Hobby2;
-            string Hobby3 = Resume.Hobby3;
+            string hobby = Resume.hobby;
+            string hobby1 = Resume.hobby1;
+            string hobby2 = Resume.hobby2;
+            string hobby3 = Resume.hobby3;
 
-            FirstName_LBL.Text = "First Name: " + Resume.FirstName;
-            LastName_LBL.Text = "Last Name: " + Resume.LastName;
-            MiddleName_LBL.Text = "MiddleName: " + Resume.LastName;
-            Email_LBL.Text = "Email: " + Resume.Email;
-            PhoneNumber_LBL.Text = "PhoneNumber: " + Resume.PhoneNumber;
-            HomeAddress_LBL.Text = "HomeAddress: " + Resume.HomeAddress;
-            Postal_LBL.Text = "Postal: " + Resume.PostalCode;
-            Municipality_LBL.Text = "Municipality: " + Resume.Municipality;
-            Province_LBL.Text = "Provicne: " + Resume.Province;
-            College_LBL.Text = "College: " + Resume.College;
-            Course_LBL.Text = "Course: " + Resume.Course;
-            GraduatedYear_LBL.Text = "GreaduatedYear: " + Resume.CollegeGraduated;
-            SHS_LBL.Text = "SeniorHighSchool: " + Resume.SeniorHighSchool;
-            Strand_LBL.Text = "Strand: " + Resume.Strand;
-            GraduatedYear1_LBL.Text = "GreaduatedYear: " + Resume.SeniorHighSchoolGraduated;
-            HS_LBL.Text = "High School: " + Resume.HighSchool;
-            GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.HighSchoolGraduated;
-            Achievement_LBL.Text = "Achievement: " + Resume.Achievement;
-            Achievement1_LBL.Text = "Achievement: " + Resume.Achievement1;
-            Experience_LBL.Text = "Exprience: " + Resume.Experience;
-            Contain_LBL.Text = "Contain: " + Resume.Contain;
-            Contain1_LBL.Text = "Contain: " + Resume.Contain1;
-            Contain2_LBL.Text = "Contain: " + Resume.Contain2;
-            Skills_LBL.Text = "Skills: " + Resume.Skills;
-            Skills1_LBL.Text = "Skills: " + Resume.Skills1;
-            Skills2_LBL.Text = "Skills: " + Resume.Skills2;
-            Skills3_LBL.Text = "Skills: " + Resume.Skills3;
-            Skills4_LBL.Text = "Skills: " + Resume.Skills4;
-            Skills5_LBL.Text = "Skills: " + Resume.Skills5;
-            Hobby_LBL.Text = "Hobby: " + Resume.Hobby;
-            Hobby1_LBL.Text = "Hobby: " + Resume.Hobby1;
-            Hobby2_LBL.Text = "Hobby: " + Resume.Hobby2;
-            Hobby3_LBL.Text = "Hobby: " + Resume.Hobby3;
+            FirstName_LBL.Text = "First Name: " + Resume.firstname;
+            LastName_LBL.Text = "Last Name: " + Resume.lastname;
+            MiddleName_LBL.Text = "MiddleName: " + Resume.middlename;
+            Email_LBL.Text = "Email: " + Resume.email;
+            PhoneNumber_LBL.Text = "PhoneNumber: " + Resume.phonenumber;
+            HomeAddress_LBL.Text = "HomeAddress: " + Resume.homeaddress;
+            Postal_LBL.Text = "Postal: " + Resume.postalcode;
+            Municipality_LBL.Text = "Municipality: " + Resume.municipality;
+            Province_LBL.Text = "Provicne: " + Resume.province;
+            College_LBL.Text = "College: " + Resume.college;
+            Course_LBL.Text = "Course: " + Resume.course;
+            GraduatedYear_LBL.Text = "GreaduatedYear: " + Resume.collegegraduated;
+            SHS_LBL.Text = "SeniorHighSchool: " + Resume.seniorhighschool;
+            Strand_LBL.Text = "Strand: " + Resume.strand;
+            GraduatedYear1_LBL.Text = "GreaduatedYear: " + Resume.seniorhighschoolgraduated;
+            HS_LBL.Text = "High School: " + Resume.highschool;
+            GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.highschoolgraduated;
+            Achievement_LBL.Text = "Achievement: " + Resume.achievement;
+            Achievement1_LBL.Text = "Achievement: " + Resume.achievement1;
+            Experience_LBL.Text = "Exprience: " + Resume.experience;
+            Contain_LBL.Text = "Contain: " + Resume.contain;
+            Contain1_LBL.Text = "Contain: " + Resume.contain1;
+            Contain2_LBL.Text = "Contain: " + Resume.contain2;
+            Skills_LBL.Text = "Skills: " + Resume.skills;
+            Skills1_LBL.Text = "Skills: " + Resume.skills1;
+            Skills2_LBL.Text = "Skills: " + Resume.skills2;
+            Skills3_LBL.Text = "Skills: " + Resume.skills3;
+            Skills4_LBL.Text = "Skills: " + Resume.skills4;
+            Skills5_LBL.Text = "Skills: " + Resume.skills5;
+            Hobby_LBL.Text = "Hobby: " + Resume.hobby;
+            Hobby1_LBL.Text = "Hobby: " + Resume.hobby1;
+            Hobby2_LBL.Text = "Hobby: " + Resume.hobby2;
+            Hobby3_LBL.Text = "Hobby: " + Resume.hobby3;
         }
     }
     public class ResumeInformation
     {
         //Basic Information
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string MiddleName { get; set; }
-        public string Email { get; set; }
-        public string PhoneNumber { get; set; }
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string middlename { get; set; }
+        public string email { get; set; }
+        public string phonenumber { get; set; }
         //Address
-        public string HomeAddress { get; set; }
-        public string PostalCode { get; set; }
-        public string Municipality { get; set; }
-        public string Province { get; set; }
-        //Education
-        public string College { get; set; }
-        public string Course { get; set; }
-        public string CollegeGraduated { get; set; }
-        public string SeniorHighSchool { get; set; }
-        public string Strand { get; set; }
-        public string SeniorHighSchoolGraduated { get; set; }
-        public string HighSchool { get; set; }
-        public string HighSchoolGraduated { get; set; }
+        public string homeaddress { get; set; }
+        public string postalcode { get; set; }
+        public string municipality { get; set; }
+        public string province { get; set; }
+       // Education
+        public string college { get; set; }
+        public string course { get; set; }
+        public string collegegraduated { get; set; }
+        public string seniorhighschool { get; set; }
+        public string strand { get; set; }
+        public string seniorhighschoolgraduated { get; set; }
+        public string highschool { get; set; }
+        public string highschoolgraduated { get; set; }
         //Achievement
-        public string Achievement { get; set; }
-        public string Achievement1 { get; set; }
+        public string achievement { get; set; }
+        public string achievement1 { get; set; }
         //Experience
-        public string Experience { get; set; }
-        public string Contain { get; set; }
-        public string Contain1 { get; set; }
-        public string Contain2 { get; set; }
-        //Skills
-        public string Skills { get; set; }
-        public string Skills1 { get; set; }
-        public string Skills2 { get; set; }
-        public string Skills3 { get; set; }
-        public string Skills4 { get; set; }
-        public string Skills5 { get; set; }
-        //Hobby
-        public string Hobby { get; set; }
-        public string Hobby1 { get; set; }
-        public string Hobby2 { get; set; }
-        public string Hobby3 { get; set; }
+        public string experience { get; set; }
+        public string contain { get; set; }
+        public string contain1 { get; set; }
+        public string contain2 { get; set; }
+       // Skills
+        public string skills { get; set; }
+        public string skills1 { get; set; }
+        public string skills2 { get; set; }
+        public string skills3 { get; set; }
+        public string skills4 { get; set; }
+        public string skills5 { get; set; }
+       // Hobby
+        public string hobby { get; set; }
+        public string hobby1 { get; set; }
+        public string hobby2 { get; set; }
+        public string hobby3 { get; set; }
     }
 }
