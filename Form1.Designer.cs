@@ -58,8 +58,6 @@
             this.Hobby1_LBL = new System.Windows.Forms.Label();
             this.Hobby2_LBL = new System.Windows.Forms.Label();
             this.Hobby3_LBL = new System.Windows.Forms.Label();
-            this.Achievement_LBL = new System.Windows.Forms.Label();
-            this.Achievement1_LBL = new System.Windows.Forms.Label();
             this.Skills3_LBL = new System.Windows.Forms.Label();
             this.Skills2_LBL = new System.Windows.Forms.Label();
             this.Skills1_LBL = new System.Windows.Forms.Label();
@@ -70,12 +68,14 @@
             this.Skills5_LBL = new System.Windows.Forms.Label();
             this.Skills4_LBL = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.Contain_LBL = new System.Windows.Forms.Label();
             this.Experience_LBL = new System.Windows.Forms.Label();
-            this.Contain2_LBL = new System.Windows.Forms.Label();
-            this.Contain1_LBL = new System.Windows.Forms.Label();
             this.Read_BTN = new System.Windows.Forms.PictureBox();
             this.Generate_BTN = new System.Windows.Forms.PictureBox();
+            this.Contain1_BOX = new System.Windows.Forms.RichTextBox();
+            this.Contain2_BOX = new System.Windows.Forms.RichTextBox();
+            this.Contain3_BOX = new System.Windows.Forms.RichTextBox();
+            this.Achievement1_BOX = new System.Windows.Forms.RichTextBox();
+            this.Achievement2_BOX = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Generate_BTN)).BeginInit();
             this.SuspendLayout();
@@ -308,7 +308,7 @@
             // 
             this.Hobby_LBL.AutoSize = true;
             this.Hobby_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby_LBL.Location = new System.Drawing.Point(417, 167);
+            this.Hobby_LBL.Location = new System.Drawing.Point(417, 163);
             this.Hobby_LBL.Name = "Hobby_LBL";
             this.Hobby_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby_LBL.TabIndex = 27;
@@ -345,7 +345,7 @@
             // 
             this.Hobby1_LBL.AutoSize = true;
             this.Hobby1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby1_LBL.Location = new System.Drawing.Point(417, 182);
+            this.Hobby1_LBL.Location = new System.Drawing.Point(417, 178);
             this.Hobby1_LBL.Name = "Hobby1_LBL";
             this.Hobby1_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby1_LBL.TabIndex = 28;
@@ -355,7 +355,7 @@
             // 
             this.Hobby2_LBL.AutoSize = true;
             this.Hobby2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby2_LBL.Location = new System.Drawing.Point(417, 198);
+            this.Hobby2_LBL.Location = new System.Drawing.Point(417, 194);
             this.Hobby2_LBL.Name = "Hobby2_LBL";
             this.Hobby2_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby2_LBL.TabIndex = 29;
@@ -365,37 +365,17 @@
             // 
             this.Hobby3_LBL.AutoSize = true;
             this.Hobby3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Hobby3_LBL.Location = new System.Drawing.Point(417, 212);
+            this.Hobby3_LBL.Location = new System.Drawing.Point(417, 208);
             this.Hobby3_LBL.Name = "Hobby3_LBL";
             this.Hobby3_LBL.Size = new System.Drawing.Size(44, 13);
             this.Hobby3_LBL.TabIndex = 30;
             this.Hobby3_LBL.Text = "Hobby:";
             // 
-            // Achievement_LBL
-            // 
-            this.Achievement_LBL.AutoSize = true;
-            this.Achievement_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Achievement_LBL.Location = new System.Drawing.Point(417, 411);
-            this.Achievement_LBL.Name = "Achievement_LBL";
-            this.Achievement_LBL.Size = new System.Drawing.Size(79, 13);
-            this.Achievement_LBL.TabIndex = 31;
-            this.Achievement_LBL.Text = "Achievement:";
-            // 
-            // Achievement1_LBL
-            // 
-            this.Achievement1_LBL.AutoSize = true;
-            this.Achievement1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Achievement1_LBL.Location = new System.Drawing.Point(417, 447);
-            this.Achievement1_LBL.Name = "Achievement1_LBL";
-            this.Achievement1_LBL.Size = new System.Drawing.Size(79, 13);
-            this.Achievement1_LBL.TabIndex = 32;
-            this.Achievement1_LBL.Text = "Achievement:";
-            // 
             // Skills3_LBL
             // 
             this.Skills3_LBL.AutoSize = true;
             this.Skills3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills3_LBL.Location = new System.Drawing.Point(417, 568);
+            this.Skills3_LBL.Location = new System.Drawing.Point(417, 574);
             this.Skills3_LBL.Name = "Skills3_LBL";
             this.Skills3_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills3_LBL.TabIndex = 39;
@@ -405,7 +385,7 @@
             // 
             this.Skills2_LBL.AutoSize = true;
             this.Skills2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills2_LBL.Location = new System.Drawing.Point(417, 550);
+            this.Skills2_LBL.Location = new System.Drawing.Point(417, 557);
             this.Skills2_LBL.Name = "Skills2_LBL";
             this.Skills2_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills2_LBL.TabIndex = 38;
@@ -415,7 +395,7 @@
             // 
             this.Skills1_LBL.AutoSize = true;
             this.Skills1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills1_LBL.Location = new System.Drawing.Point(417, 533);
+            this.Skills1_LBL.Location = new System.Drawing.Point(417, 540);
             this.Skills1_LBL.Name = "Skills1_LBL";
             this.Skills1_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills1_LBL.TabIndex = 37;
@@ -425,7 +405,7 @@
             // 
             this.Skills_LBL.AutoSize = true;
             this.Skills_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills_LBL.Location = new System.Drawing.Point(417, 516);
+            this.Skills_LBL.Location = new System.Drawing.Point(417, 525);
             this.Skills_LBL.Name = "Skills_LBL";
             this.Skills_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills_LBL.TabIndex = 36;
@@ -462,7 +442,7 @@
             // 
             this.Skills5_LBL.AutoSize = true;
             this.Skills5_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills5_LBL.Location = new System.Drawing.Point(417, 605);
+            this.Skills5_LBL.Location = new System.Drawing.Point(417, 610);
             this.Skills5_LBL.Name = "Skills5_LBL";
             this.Skills5_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills5_LBL.TabIndex = 42;
@@ -472,7 +452,7 @@
             // 
             this.Skills4_LBL.AutoSize = true;
             this.Skills4_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills4_LBL.Location = new System.Drawing.Point(417, 587);
+            this.Skills4_LBL.Location = new System.Drawing.Point(417, 593);
             this.Skills4_LBL.Name = "Skills4_LBL";
             this.Skills4_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills4_LBL.TabIndex = 41;
@@ -487,45 +467,15 @@
             this.label20.Size = new System.Drawing.Size(0, 13);
             this.label20.TabIndex = 40;
             // 
-            // Contain_LBL
-            // 
-            this.Contain_LBL.AutoSize = true;
-            this.Contain_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contain_LBL.Location = new System.Drawing.Point(417, 304);
-            this.Contain_LBL.Name = "Contain_LBL";
-            this.Contain_LBL.Size = new System.Drawing.Size(54, 13);
-            this.Contain_LBL.TabIndex = 44;
-            this.Contain_LBL.Text = "Contain:";
-            // 
             // Experience_LBL
             // 
             this.Experience_LBL.AutoSize = true;
             this.Experience_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Experience_LBL.Location = new System.Drawing.Point(417, 285);
+            this.Experience_LBL.Location = new System.Drawing.Point(417, 260);
             this.Experience_LBL.Name = "Experience_LBL";
             this.Experience_LBL.Size = new System.Drawing.Size(68, 13);
             this.Experience_LBL.TabIndex = 43;
             this.Experience_LBL.Text = "Experience:";
-            // 
-            // Contain2_LBL
-            // 
-            this.Contain2_LBL.AutoSize = true;
-            this.Contain2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contain2_LBL.Location = new System.Drawing.Point(417, 337);
-            this.Contain2_LBL.Name = "Contain2_LBL";
-            this.Contain2_LBL.Size = new System.Drawing.Size(54, 13);
-            this.Contain2_LBL.TabIndex = 45;
-            this.Contain2_LBL.Text = "Contain:";
-            // 
-            // Contain1_LBL
-            // 
-            this.Contain1_LBL.AutoSize = true;
-            this.Contain1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contain1_LBL.Location = new System.Drawing.Point(417, 321);
-            this.Contain1_LBL.Name = "Contain1_LBL";
-            this.Contain1_LBL.Size = new System.Drawing.Size(54, 13);
-            this.Contain1_LBL.TabIndex = 46;
-            this.Contain1_LBL.Text = "Contain:";
             // 
             // Read_BTN
             // 
@@ -548,17 +498,54 @@
             this.Generate_BTN.TabStop = false;
             this.Generate_BTN.Click += new System.EventHandler(this.Generate_BTN_Click);
             // 
+            // Contain1_BOX
+            // 
+            this.Contain1_BOX.Location = new System.Drawing.Point(420, 276);
+            this.Contain1_BOX.Name = "Contain1_BOX";
+            this.Contain1_BOX.Size = new System.Drawing.Size(348, 36);
+            this.Contain1_BOX.TabIndex = 51;
+            this.Contain1_BOX.Text = "";
+            // 
+            // Contain2_BOX
+            // 
+            this.Contain2_BOX.Location = new System.Drawing.Point(420, 314);
+            this.Contain2_BOX.Name = "Contain2_BOX";
+            this.Contain2_BOX.Size = new System.Drawing.Size(348, 32);
+            this.Contain2_BOX.TabIndex = 52;
+            this.Contain2_BOX.Text = "";
+            // 
+            // Contain3_BOX
+            // 
+            this.Contain3_BOX.Location = new System.Drawing.Point(420, 348);
+            this.Contain3_BOX.Name = "Contain3_BOX";
+            this.Contain3_BOX.Size = new System.Drawing.Size(348, 34);
+            this.Contain3_BOX.TabIndex = 53;
+            this.Contain3_BOX.Text = "";
+            // 
+            // Achievement1_BOX
+            // 
+            this.Achievement1_BOX.Location = new System.Drawing.Point(420, 420);
+            this.Achievement1_BOX.Name = "Achievement1_BOX";
+            this.Achievement1_BOX.Size = new System.Drawing.Size(348, 37);
+            this.Achievement1_BOX.TabIndex = 54;
+            this.Achievement1_BOX.Text = "";
+            // 
+            // Achievement2_BOX
+            // 
+            this.Achievement2_BOX.Location = new System.Drawing.Point(420, 461);
+            this.Achievement2_BOX.Name = "Achievement2_BOX";
+            this.Achievement2_BOX.Size = new System.Drawing.Size(348, 33);
+            this.Achievement2_BOX.TabIndex = 55;
+            this.Achievement2_BOX.Text = "";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background13;
+            this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background4;
             this.ClientSize = new System.Drawing.Size(784, 676);
             this.Controls.Add(this.Generate_BTN);
             this.Controls.Add(this.Read_BTN);
-            this.Controls.Add(this.Contain1_LBL);
-            this.Controls.Add(this.Contain2_LBL);
-            this.Controls.Add(this.Contain_LBL);
             this.Controls.Add(this.Experience_LBL);
             this.Controls.Add(this.Skills5_LBL);
             this.Controls.Add(this.Skills4_LBL);
@@ -570,8 +557,6 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.Achievement1_LBL);
-            this.Controls.Add(this.Achievement_LBL);
             this.Controls.Add(this.Hobby3_LBL);
             this.Controls.Add(this.Hobby2_LBL);
             this.Controls.Add(this.Hobby1_LBL);
@@ -602,6 +587,11 @@
             this.Controls.Add(this.MiddleName_LBL);
             this.Controls.Add(this.LastName_LBL);
             this.Controls.Add(this.FirstName_LBL);
+            this.Controls.Add(this.Contain1_BOX);
+            this.Controls.Add(this.Contain2_BOX);
+            this.Controls.Add(this.Contain3_BOX);
+            this.Controls.Add(this.Achievement1_BOX);
+            this.Controls.Add(this.Achievement2_BOX);
             this.Name = "MainForm";
             this.Text = "Generate to PDF";
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).EndInit();
@@ -643,8 +633,6 @@
         private System.Windows.Forms.Label Hobby1_LBL;
         private System.Windows.Forms.Label Hobby2_LBL;
         private System.Windows.Forms.Label Hobby3_LBL;
-        private System.Windows.Forms.Label Achievement_LBL;
-        private System.Windows.Forms.Label Achievement1_LBL;
         private System.Windows.Forms.Label Skills3_LBL;
         private System.Windows.Forms.Label Skills2_LBL;
         private System.Windows.Forms.Label Skills1_LBL;
@@ -655,12 +643,14 @@
         private System.Windows.Forms.Label Skills5_LBL;
         private System.Windows.Forms.Label Skills4_LBL;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label Contain_LBL;
         private System.Windows.Forms.Label Experience_LBL;
-        private System.Windows.Forms.Label Contain2_LBL;
-        private System.Windows.Forms.Label Contain1_LBL;
         private System.Windows.Forms.PictureBox Read_BTN;
         private System.Windows.Forms.PictureBox Generate_BTN;
+        private System.Windows.Forms.RichTextBox Contain1_BOX;
+        private System.Windows.Forms.RichTextBox Contain2_BOX;
+        private System.Windows.Forms.RichTextBox Contain3_BOX;
+        private System.Windows.Forms.RichTextBox Achievement1_BOX;
+        private System.Windows.Forms.RichTextBox Achievement2_BOX;
     }
 }
 

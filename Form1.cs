@@ -28,7 +28,6 @@ namespace Resume_Creator
             string filename = "ResumeInformation.json";
             string jsonInfo = File.ReadAllText(filename);
             ResumeInformation Resume = JsonSerializer.Deserialize<ResumeInformation>(jsonInfo);
-            MessageBox.Show(jsonInfo);
             //Basic Information
             string Firstname = Resume.firstname;
             string Lastname = Resume.lastname;
@@ -86,12 +85,12 @@ namespace Resume_Creator
             GraduatedYear1_LBL.Text = "GraduatedYear: " + Resume.seniorhighschoolgraduated;
             HS_LBL.Text = "High School: " + Resume.highschool;
             GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.highschoolgraduated;
-            Achievement_LBL.Text = "Achievement: " + Resume.achievement;
-            Achievement1_LBL.Text = "Achievement: " + Resume.achievement1;
-            Experience_LBL.Text = "Experience: " + Resume.experience;
-            Contain_LBL.Text = "Contain: " + Resume.contain;
-            Contain1_LBL.Text = "Contain: " + Resume.contain1;
-            Contain2_LBL.Text = "Contain: " + Resume.contain2;
+            Achievement1_BOX.Text = Resume.achievement;
+            Achievement2_BOX.Text = Resume.achievement1;
+            Experience_LBL.Text = Resume.experience;
+            Contain1_BOX.Text =  Resume.contain;
+            Contain2_BOX.Text = Resume.contain1;
+            Contain3_BOX.Text = Resume.contain2;
             Skills_LBL.Text = "Skills: " + Resume.skills1;
             Skills1_LBL.Text = "Skills: " + Resume.skills2;
             Skills2_LBL.Text = "Skills: " + Resume.skills3;
