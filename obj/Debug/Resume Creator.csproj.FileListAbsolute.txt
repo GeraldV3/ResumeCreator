@@ -30,3 +30,14 @@ C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Json.xml
 C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.ValueTuple.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\PdfSharp.Charting.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\PdfSharp.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Drawing.Common.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\PdfSharp.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\PdfSharp.Charting.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Drawing.Common.xml
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\ResumeInformation.json
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\pc\Desktop\Resume Creator\bin\Debug\System.Text.Encoding.CodePages.xml
