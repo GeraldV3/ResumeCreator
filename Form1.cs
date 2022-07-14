@@ -208,6 +208,18 @@ namespace Resume_Creator
                     graph.DrawString(Hobby3, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 280, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Hobby4, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 295, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    graph.DrawString("EDUCATION", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(College, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Course, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Collegegraduated, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Seniorhighschool, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 90, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Strand, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 105, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(SeniorHighgraduated, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 120, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString(Highschool, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 150, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Highschoolgraduated, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 165, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
                     pdf.Save(dlg.FileName);
                 }
             }
