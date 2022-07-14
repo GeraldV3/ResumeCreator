@@ -157,6 +157,47 @@ namespace Resume_Creator
             string Hobby2 = Resume.hobby2;
             string Hobby3 = Resume.hobby3;
             string Hobby4 = Resume.hobby4;
+
+            using (SaveFileDialog dlg = new SaveFileDialog())
+            {
+                dlg.InitialDirectory = @"C:\Users\pc\Desktop\OOP\Resume";
+                dlg.FileName = Lastname + Firstname + ".pdf";
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    PdfDocument pdf = new PdfDocument();
+                    PdfPage page = pdf.AddPage();
+
+                    XGraphics graph = XGraphics.FromPdfPage(page);
+
+                    XFont bigfont = new XFont("Bebas Neue Regular", 18, XFontStyle.Regular);
+                    XFont smallfont = new XFont("Open Sans Light", 12, XFontStyle.Regular);
+                    XFont titlefont = new XFont("Bebas Neue Regular", 45, XFontStyle.Bold);
+
+                    XPen pen = new XPen(XColors.White, 20);
+
+                    graph.DrawRoundedRectangle(XBrushes.DarkSlateGray, 0, 0, page.Width.Point, page.Height.Point, 0, 0);
+
+                    graph.DrawRectangle(pen, 0, 0, page.Width.Point, page.Height.Point);
+
+                    int marginleft = 25;
+                    int initialleft = 200;
+                    int marginright = 430;
+
+                    string png = @"C:\Users\pc\Desktop\OOP\Resume\Gerald.png";
+                    XImage image = XImage.FromFile(png);
+                    graph.DrawImage(image, marginright, 50, 150, 150);
+
+                    graph.DrawString(Firstname + " " + Middlename + " " + Lastname, titlefont, XBrushes.White, new XRect(marginleft, initialleft - 110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString("PROFILE", bigfont, XBrushes.White, new XRect(marginright, initialleft + 20, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Firstname, smallfont, XBrushes.White, new XRect(marginright, initialleft + 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Middlename, smallfont, XBrushes.White, new XRect(marginright, initialleft + 65, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Lastname, smallfont, XBrushes.White, new XRect(marginright, initialleft + 80, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Email, smallfont, XBrushes.White, new XRect(marginright, initialleft + 95, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Phonenumber, smallfont, XBrushes.White, new XRect(marginright, initialleft + 110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    pdf.Save(dlg.FileName);
+                }
+            }
         }
     }
     public class ResumeInformation
