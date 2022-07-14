@@ -13,11 +13,13 @@ using System.IO;
 using PdfSharp;
 using PdfSharp.Pdf;
 using PdfSharp.Drawing;
+using System.Media;
 
 namespace Resume_Creator
 {
     public partial class MainForm : Form
     {
+        SoundPlayer  Click = new SoundPlayer(@"C:\Users\pc\Desktop\Resume Creator\Picture and Sounds\Click.wav");
         public MainForm()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace Resume_Creator
         }
         private void Read_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             string filename = "ResumeInformation.json";
             string jsonInfo = File.ReadAllText(filename);
             ResumeInformation Resume = JsonSerializer.Deserialize<ResumeInformation>(jsonInfo);
@@ -111,6 +114,7 @@ namespace Resume_Creator
         }
         private void Generate_BTN_Click(object sender, EventArgs e)
         {
+            Click.Play();
             string filename = "ResumeInformation.json";
             string jsonInfo = File.ReadAllText(filename);
             ResumeInformation Resume = JsonSerializer.Deserialize<ResumeInformation>(jsonInfo);
@@ -221,7 +225,6 @@ namespace Resume_Creator
                     graph.DrawString(Highschoolgraduated, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 165, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     initialmiddle = initialmiddle + 200;
-
                     graph.DrawString("EXPERIENCE", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Experience, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Contain, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -245,6 +248,9 @@ namespace Resume_Creator
                     graph.DrawString(Skills6, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 105, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     pdf.Save(dlg.FileName);
+                    MessageBox.Show("You can know see your Generated Resume!");
+                    MessageBox.Show("Thank You!");
+                    Application.Exit();
                 }
             }
         }

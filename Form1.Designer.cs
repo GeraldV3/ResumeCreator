@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.FirstName_LBL = new System.Windows.Forms.Label();
             this.LastName_LBL = new System.Windows.Forms.Label();
             this.PhoneNumber_LBL = new System.Windows.Forms.Label();
@@ -388,7 +389,7 @@
             // 
             this.Skills2_LBL.AutoSize = true;
             this.Skills2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills2_LBL.Location = new System.Drawing.Point(417, 557);
+            this.Skills2_LBL.Location = new System.Drawing.Point(417, 558);
             this.Skills2_LBL.Name = "Skills2_LBL";
             this.Skills2_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills2_LBL.TabIndex = 38;
@@ -398,7 +399,7 @@
             // 
             this.Skills1_LBL.AutoSize = true;
             this.Skills1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills1_LBL.Location = new System.Drawing.Point(417, 540);
+            this.Skills1_LBL.Location = new System.Drawing.Point(417, 541);
             this.Skills1_LBL.Name = "Skills1_LBL";
             this.Skills1_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills1_LBL.TabIndex = 37;
@@ -445,7 +446,7 @@
             // 
             this.Skills5_LBL.AutoSize = true;
             this.Skills5_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills5_LBL.Location = new System.Drawing.Point(417, 610);
+            this.Skills5_LBL.Location = new System.Drawing.Point(417, 609);
             this.Skills5_LBL.Name = "Skills5_LBL";
             this.Skills5_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills5_LBL.TabIndex = 42;
@@ -455,7 +456,7 @@
             // 
             this.Skills4_LBL.AutoSize = true;
             this.Skills4_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skills4_LBL.Location = new System.Drawing.Point(417, 593);
+            this.Skills4_LBL.Location = new System.Drawing.Point(417, 592);
             this.Skills4_LBL.Name = "Skills4_LBL";
             this.Skills4_LBL.Size = new System.Drawing.Size(42, 13);
             this.Skills4_LBL.TabIndex = 41;
@@ -505,7 +506,7 @@
             // 
             this.Achievement_LBL.AutoSize = true;
             this.Achievement_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Achievement_LBL.Location = new System.Drawing.Point(410, 423);
+            this.Achievement_LBL.Location = new System.Drawing.Point(410, 401);
             this.Achievement_LBL.Name = "Achievement_LBL";
             this.Achievement_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement_LBL.TabIndex = 53;
@@ -545,7 +546,7 @@
             // 
             this.Achievement4_LBL.AutoSize = true;
             this.Achievement4_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Achievement4_LBL.Location = new System.Drawing.Point(410, 475);
+            this.Achievement4_LBL.Location = new System.Drawing.Point(410, 466);
             this.Achievement4_LBL.Name = "Achievement4_LBL";
             this.Achievement4_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement4_LBL.TabIndex = 60;
@@ -555,7 +556,7 @@
             // 
             this.Achievement3_LBL.AutoSize = true;
             this.Achievement3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Achievement3_LBL.Location = new System.Drawing.Point(410, 462);
+            this.Achievement3_LBL.Location = new System.Drawing.Point(410, 448);
             this.Achievement3_LBL.Name = "Achievement3_LBL";
             this.Achievement3_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement3_LBL.TabIndex = 61;
@@ -565,7 +566,7 @@
             // 
             this.Achievement2_LBL.AutoSize = true;
             this.Achievement2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Achievement2_LBL.Location = new System.Drawing.Point(410, 449);
+            this.Achievement2_LBL.Location = new System.Drawing.Point(410, 432);
             this.Achievement2_LBL.Name = "Achievement2_LBL";
             this.Achievement2_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement2_LBL.TabIndex = 62;
@@ -575,7 +576,7 @@
             // 
             this.Achievement1_LBL.AutoSize = true;
             this.Achievement1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
-            this.Achievement1_LBL.Location = new System.Drawing.Point(410, 436);
+            this.Achievement1_LBL.Location = new System.Drawing.Point(410, 415);
             this.Achievement1_LBL.Name = "Achievement1_LBL";
             this.Achievement1_LBL.Size = new System.Drawing.Size(79, 13);
             this.Achievement1_LBL.TabIndex = 63;
@@ -585,7 +586,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background4;
+            this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background5;
             this.ClientSize = new System.Drawing.Size(784, 676);
             this.Controls.Add(this.Achievement1_LBL);
             this.Controls.Add(this.Achievement2_LBL);
@@ -638,6 +639,7 @@
             this.Controls.Add(this.MiddleName_LBL);
             this.Controls.Add(this.LastName_LBL);
             this.Controls.Add(this.FirstName_LBL);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Generate to PDF";
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).EndInit();
