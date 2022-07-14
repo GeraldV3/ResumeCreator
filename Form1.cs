@@ -182,6 +182,7 @@ namespace Resume_Creator
                     int marginleft = 25;
                     int initialleft = 200;
                     int marginright = 430;
+                    int initialmiddle = 200;
 
                     string png = @"C:\Users\pc\Desktop\OOP\Resume\Gerald.png";
                     XImage image = XImage.FromFile(png);
@@ -194,6 +195,18 @@ namespace Resume_Creator
                     graph.DrawString(Lastname, smallfont, XBrushes.White, new XRect(marginright, initialleft + 80, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Email, smallfont, XBrushes.White, new XRect(marginright, initialleft + 95, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Phonenumber, smallfont, XBrushes.White, new XRect(marginright, initialleft + 110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString("ADDRESS", smallfont, XBrushes.White, new XRect(marginright, initialleft + 145, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Homeaddress, smallfont, XBrushes.White, new XRect(marginright, initialleft + 160, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Postalcode, smallfont, XBrushes.White, new XRect(marginright, initialleft + 175, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Municipality, smallfont, XBrushes.White, new XRect(marginright, initialleft + 190, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Province, smallfont, XBrushes.White, new XRect(marginright, initialleft + 205, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
+                    graph.DrawString("HOBBY", smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 235, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby1, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 250, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby2, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 265, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby3, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 280, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby4, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 295, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     pdf.Save(dlg.FileName);
                 }
