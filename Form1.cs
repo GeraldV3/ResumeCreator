@@ -45,18 +45,22 @@ namespace Resume_Creator
             string Collegegraduated = Resume.collegegraduated;
             string Seniorhighschool = Resume.seniorhighschool;
             string Strand = Resume.strand;
-            string Seniorhighschoolgraduated = Resume.seniorhighschoolgraduated;
+            string SeniorHighgraduated = Resume.seniorhighschoolgraduated;
             string Highschool = Resume.highschool;
             string Highschoolgraduated = Resume.highschoolgraduated;
             //Achievement
             string Achievement = Resume.achievement;
             string Achievement1 = Resume.achievement1;
+            string Achievement2 = Resume.achievement2;
+            string Achievement3 = Resume.achievement3;
+            string Achievement4 = Resume.achievement4;
+
             //Experience
             string Experience = Resume.experience;
             string Contain = Resume.contain;
             string Contain1 = Resume.contain1;
             string Contain2 = Resume.contain2;
-           // Skills
+            // Skills
             string Skills1 = Resume.skills1;
             string Skills2 = Resume.skills2;
             string Skills3 = Resume.skills3;
@@ -85,12 +89,15 @@ namespace Resume_Creator
             GraduatedYear1_LBL.Text = "GraduatedYear: " + Resume.seniorhighschoolgraduated;
             HS_LBL.Text = "High School: " + Resume.highschool;
             GraduatedYear2_LBL.Text = "GraduatedYear: " + Resume.highschoolgraduated;
-            Achievement1_BOX.Text = Resume.achievement;
-            Achievement2_BOX.Text = Resume.achievement1;
-            Experience_LBL.Text = Resume.experience;
-            Contain1_BOX.Text =  Resume.contain;
-            Contain2_BOX.Text = Resume.contain1;
-            Contain3_BOX.Text = Resume.contain2;
+            Achievement_LBL.Text = Resume.achievement;
+            Achievement1_LBL.Text = Resume.achievement1;
+            Achievement2_LBL.Text = Resume.achievement2;
+            Achievement3_LBL.Text = Resume.achievement3;
+            Achievement4_LBL.Text = Resume.achievement;
+            Experience_LBL.Text = "Exprience: " + Resume.experience;
+            Experience1_LBL.Text =  Resume.contain;
+            Experience2_LBL.Text = Resume.contain1;
+            Experience3_LBL.Text = Resume.contain2;
             Skills_LBL.Text = "Skills: " + Resume.skills1;
             Skills1_LBL.Text = "Skills: " + Resume.skills2;
             Skills2_LBL.Text = "Skills: " + Resume.skills3;
@@ -124,12 +131,15 @@ namespace Resume_Creator
             string Collegegraduated = Resume.collegegraduated;
             string Seniorhighschool = Resume.seniorhighschool;
             string Strand = Resume.strand;
-            string Seniorhighschoolgraduated = Resume.seniorhighschoolgraduated;
+            string SeniorHighgraduated = Resume.seniorhighschoolgraduated;
             string Highschool = Resume.highschool;
             string Highschoolgraduated = Resume.highschoolgraduated;
             //Achievement
             string Achievement = Resume.achievement;
             string Achievement1 = Resume.achievement1;
+            string Achievement2 = Resume.achievement2;
+            string Achievement3 = Resume.achievement3;
+            string Achievement4 = Resume.achievement4;
             //Experience
             string Experience = Resume.experience;
             string Contain = Resume.contain;
@@ -174,6 +184,9 @@ namespace Resume_Creator
         //Achievement
         public string achievement { get; set; }
         public string achievement1 { get; set; }
+        public string achievement2 { get; set; }
+        public string achievement3 { get; set; }
+        public string achievement4 { get; set; }
         //Experience
         public string experience { get; set; }
         public string contain { get; set; }

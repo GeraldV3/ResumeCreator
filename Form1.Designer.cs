@@ -71,11 +71,14 @@
             this.Experience_LBL = new System.Windows.Forms.Label();
             this.Read_BTN = new System.Windows.Forms.PictureBox();
             this.Generate_BTN = new System.Windows.Forms.PictureBox();
-            this.Contain1_BOX = new System.Windows.Forms.RichTextBox();
-            this.Contain2_BOX = new System.Windows.Forms.RichTextBox();
-            this.Contain3_BOX = new System.Windows.Forms.RichTextBox();
-            this.Achievement1_BOX = new System.Windows.Forms.RichTextBox();
-            this.Achievement2_BOX = new System.Windows.Forms.RichTextBox();
+            this.Achievement_LBL = new System.Windows.Forms.Label();
+            this.Experience1_LBL = new System.Windows.Forms.Label();
+            this.Experience3_LBL = new System.Windows.Forms.Label();
+            this.Experience2_LBL = new System.Windows.Forms.Label();
+            this.Achievement4_LBL = new System.Windows.Forms.Label();
+            this.Achievement3_LBL = new System.Windows.Forms.Label();
+            this.Achievement2_LBL = new System.Windows.Forms.Label();
+            this.Achievement1_LBL = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Generate_BTN)).BeginInit();
             this.SuspendLayout();
@@ -498,45 +501,85 @@
             this.Generate_BTN.TabStop = false;
             this.Generate_BTN.Click += new System.EventHandler(this.Generate_BTN_Click);
             // 
-            // Contain1_BOX
+            // Achievement_LBL
             // 
-            this.Contain1_BOX.Location = new System.Drawing.Point(420, 276);
-            this.Contain1_BOX.Name = "Contain1_BOX";
-            this.Contain1_BOX.Size = new System.Drawing.Size(348, 36);
-            this.Contain1_BOX.TabIndex = 51;
-            this.Contain1_BOX.Text = "";
+            this.Achievement_LBL.AutoSize = true;
+            this.Achievement_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Achievement_LBL.Location = new System.Drawing.Point(410, 423);
+            this.Achievement_LBL.Name = "Achievement_LBL";
+            this.Achievement_LBL.Size = new System.Drawing.Size(79, 13);
+            this.Achievement_LBL.TabIndex = 53;
+            this.Achievement_LBL.Text = "Achievement:";
             // 
-            // Contain2_BOX
+            // Experience1_LBL
             // 
-            this.Contain2_BOX.Location = new System.Drawing.Point(420, 314);
-            this.Contain2_BOX.Name = "Contain2_BOX";
-            this.Contain2_BOX.Size = new System.Drawing.Size(348, 32);
-            this.Contain2_BOX.TabIndex = 52;
-            this.Contain2_BOX.Text = "";
+            this.Experience1_LBL.AutoSize = true;
+            this.Experience1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Experience1_LBL.Location = new System.Drawing.Point(417, 276);
+            this.Experience1_LBL.Name = "Experience1_LBL";
+            this.Experience1_LBL.Size = new System.Drawing.Size(68, 13);
+            this.Experience1_LBL.TabIndex = 57;
+            this.Experience1_LBL.Text = "Experience:";
             // 
-            // Contain3_BOX
+            // Experience3_LBL
             // 
-            this.Contain3_BOX.Location = new System.Drawing.Point(420, 348);
-            this.Contain3_BOX.Name = "Contain3_BOX";
-            this.Contain3_BOX.Size = new System.Drawing.Size(348, 34);
-            this.Contain3_BOX.TabIndex = 53;
-            this.Contain3_BOX.Text = "";
+            this.Experience3_LBL.AutoSize = true;
+            this.Experience3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Experience3_LBL.Location = new System.Drawing.Point(417, 311);
+            this.Experience3_LBL.Name = "Experience3_LBL";
+            this.Experience3_LBL.Size = new System.Drawing.Size(68, 13);
+            this.Experience3_LBL.TabIndex = 58;
+            this.Experience3_LBL.Text = "Experience:";
             // 
-            // Achievement1_BOX
+            // Experience2_LBL
             // 
-            this.Achievement1_BOX.Location = new System.Drawing.Point(420, 420);
-            this.Achievement1_BOX.Name = "Achievement1_BOX";
-            this.Achievement1_BOX.Size = new System.Drawing.Size(348, 37);
-            this.Achievement1_BOX.TabIndex = 54;
-            this.Achievement1_BOX.Text = "";
+            this.Experience2_LBL.AutoSize = true;
+            this.Experience2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Experience2_LBL.Location = new System.Drawing.Point(417, 293);
+            this.Experience2_LBL.Name = "Experience2_LBL";
+            this.Experience2_LBL.Size = new System.Drawing.Size(68, 13);
+            this.Experience2_LBL.TabIndex = 59;
+            this.Experience2_LBL.Text = "Experience:";
             // 
-            // Achievement2_BOX
+            // Achievement4_LBL
             // 
-            this.Achievement2_BOX.Location = new System.Drawing.Point(420, 461);
-            this.Achievement2_BOX.Name = "Achievement2_BOX";
-            this.Achievement2_BOX.Size = new System.Drawing.Size(348, 33);
-            this.Achievement2_BOX.TabIndex = 55;
-            this.Achievement2_BOX.Text = "";
+            this.Achievement4_LBL.AutoSize = true;
+            this.Achievement4_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Achievement4_LBL.Location = new System.Drawing.Point(410, 475);
+            this.Achievement4_LBL.Name = "Achievement4_LBL";
+            this.Achievement4_LBL.Size = new System.Drawing.Size(79, 13);
+            this.Achievement4_LBL.TabIndex = 60;
+            this.Achievement4_LBL.Text = "Achievement:";
+            // 
+            // Achievement3_LBL
+            // 
+            this.Achievement3_LBL.AutoSize = true;
+            this.Achievement3_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Achievement3_LBL.Location = new System.Drawing.Point(410, 462);
+            this.Achievement3_LBL.Name = "Achievement3_LBL";
+            this.Achievement3_LBL.Size = new System.Drawing.Size(79, 13);
+            this.Achievement3_LBL.TabIndex = 61;
+            this.Achievement3_LBL.Text = "Achievement:";
+            // 
+            // Achievement2_LBL
+            // 
+            this.Achievement2_LBL.AutoSize = true;
+            this.Achievement2_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Achievement2_LBL.Location = new System.Drawing.Point(410, 449);
+            this.Achievement2_LBL.Name = "Achievement2_LBL";
+            this.Achievement2_LBL.Size = new System.Drawing.Size(79, 13);
+            this.Achievement2_LBL.TabIndex = 62;
+            this.Achievement2_LBL.Text = "Achievement:";
+            // 
+            // Achievement1_LBL
+            // 
+            this.Achievement1_LBL.AutoSize = true;
+            this.Achievement1_LBL.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold);
+            this.Achievement1_LBL.Location = new System.Drawing.Point(410, 436);
+            this.Achievement1_LBL.Name = "Achievement1_LBL";
+            this.Achievement1_LBL.Size = new System.Drawing.Size(79, 13);
+            this.Achievement1_LBL.TabIndex = 63;
+            this.Achievement1_LBL.Text = "Achievement:";
             // 
             // MainForm
             // 
@@ -544,6 +587,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Resume_Creator.Properties.Resources.Background4;
             this.ClientSize = new System.Drawing.Size(784, 676);
+            this.Controls.Add(this.Achievement1_LBL);
+            this.Controls.Add(this.Achievement2_LBL);
+            this.Controls.Add(this.Achievement3_LBL);
+            this.Controls.Add(this.Achievement4_LBL);
+            this.Controls.Add(this.Experience2_LBL);
+            this.Controls.Add(this.Experience3_LBL);
+            this.Controls.Add(this.Experience1_LBL);
+            this.Controls.Add(this.Achievement_LBL);
             this.Controls.Add(this.Generate_BTN);
             this.Controls.Add(this.Read_BTN);
             this.Controls.Add(this.Experience_LBL);
@@ -587,11 +638,6 @@
             this.Controls.Add(this.MiddleName_LBL);
             this.Controls.Add(this.LastName_LBL);
             this.Controls.Add(this.FirstName_LBL);
-            this.Controls.Add(this.Contain1_BOX);
-            this.Controls.Add(this.Contain2_BOX);
-            this.Controls.Add(this.Contain3_BOX);
-            this.Controls.Add(this.Achievement1_BOX);
-            this.Controls.Add(this.Achievement2_BOX);
             this.Name = "MainForm";
             this.Text = "Generate to PDF";
             ((System.ComponentModel.ISupportInitialize)(this.Read_BTN)).EndInit();
@@ -646,11 +692,14 @@
         private System.Windows.Forms.Label Experience_LBL;
         private System.Windows.Forms.PictureBox Read_BTN;
         private System.Windows.Forms.PictureBox Generate_BTN;
-        private System.Windows.Forms.RichTextBox Contain1_BOX;
-        private System.Windows.Forms.RichTextBox Contain2_BOX;
-        private System.Windows.Forms.RichTextBox Contain3_BOX;
-        private System.Windows.Forms.RichTextBox Achievement1_BOX;
-        private System.Windows.Forms.RichTextBox Achievement2_BOX;
+        private System.Windows.Forms.Label Achievement_LBL;
+        private System.Windows.Forms.Label Experience1_LBL;
+        private System.Windows.Forms.Label Experience3_LBL;
+        private System.Windows.Forms.Label Experience2_LBL;
+        private System.Windows.Forms.Label Achievement4_LBL;
+        private System.Windows.Forms.Label Achievement3_LBL;
+        private System.Windows.Forms.Label Achievement2_LBL;
+        private System.Windows.Forms.Label Achievement1_LBL;
     }
 }
 
