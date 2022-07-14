@@ -235,6 +235,15 @@ namespace Resume_Creator
                     graph.DrawString(Achievement2, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Achievement3, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
+                    initialmiddle = initialmiddle + 100;
+                    graph.DrawString("SKILLS", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Skills1, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Skills2, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Skills3, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Skills4, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Skills5, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 90, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Skills6, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 105, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+
                     pdf.Save(dlg.FileName);
                 }
             }
