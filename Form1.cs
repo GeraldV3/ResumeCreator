@@ -96,7 +96,7 @@ namespace Resume_Creator
             Achievement1_LBL.Text = Resume.achievement1;
             Achievement2_LBL.Text = Resume.achievement2;
             Achievement3_LBL.Text = Resume.achievement3;
-            Achievement4_LBL.Text = Resume.achievement;
+            Achievement4_LBL.Text = Resume.achievement4;
             Experience_LBL.Text = "Exprience: " + Resume.experience;
             Experience1_LBL.Text =  Resume.contain;
             Experience2_LBL.Text = Resume.contain1;
@@ -177,6 +177,9 @@ namespace Resume_Creator
                     XFont smallfont = new XFont("Open Sans Light", 12, XFontStyle.Regular);
                     XFont titlefont = new XFont("Bebas Neue Regular", 45, XFontStyle.Bold);
 
+                    XPen Line = new XPen(XColors.White, 2);
+                    XPen NewLine = new XPen(XColors.White, 3);
+
                     XPen pen = new XPen(XColors.White, 20);
 
                     graph.DrawRoundedRectangle(XBrushes.DarkSlateGray, 0, 0, page.Width.Point, page.Height.Point, 0, 0);
@@ -194,25 +197,30 @@ namespace Resume_Creator
 
                     graph.DrawString(Firstname + " " + Middlename + " " + Lastname, titlefont, XBrushes.White, new XRect(marginleft, initialleft - 110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString("PROFILE", bigfont, XBrushes.White, new XRect(marginright, initialleft + 20, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(Line, marginright, initialleft + 45, 150, 1);
                     graph.DrawString(Firstname, smallfont, XBrushes.White, new XRect(marginright, initialleft + 50, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Middlename, smallfont, XBrushes.White, new XRect(marginright, initialleft + 65, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Lastname, smallfont, XBrushes.White, new XRect(marginright, initialleft + 80, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Email, smallfont, XBrushes.White, new XRect(marginright, initialleft + 95, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Phonenumber, smallfont, XBrushes.White, new XRect(marginright, initialleft + 110, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    
 
                     graph.DrawString("ADDRESS", smallfont, XBrushes.White, new XRect(marginright, initialleft + 145, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Homeaddress, smallfont, XBrushes.White, new XRect(marginright, initialleft + 160, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Postalcode, smallfont, XBrushes.White, new XRect(marginright, initialleft + 175, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Municipality, smallfont, XBrushes.White, new XRect(marginright, initialleft + 190, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Province, smallfont, XBrushes.White, new XRect(marginright, initialleft + 205, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(Line, marginright, initialleft + 165, 150, 1);
+                    graph.DrawString(Homeaddress, smallfont, XBrushes.White, new XRect(marginright, initialleft + 175, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Postalcode, smallfont, XBrushes.White, new XRect(marginright, initialleft + 190, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Municipality, smallfont, XBrushes.White, new XRect(marginright, initialleft + 205, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Province, smallfont, XBrushes.White, new XRect(marginright, initialleft + 220, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    graph.DrawString("HOBBY", smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 235, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Hobby1, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 250, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Hobby2, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 265, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Hobby3, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 280, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
-                    graph.DrawString(Hobby4, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 295, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString("HOBBY", smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 250, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(Line, marginright, initialleft + 270, 150, 1);
+                    graph.DrawString(Hobby1, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 280, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby2, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 295, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby3, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 310, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Hobby4, smallfont, XBrushes.White, new XRect(marginright, initialmiddle + 325, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
                     graph.DrawString("EDUCATION", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(NewLine, marginleft, initialmiddle + 25, 300, 1);
                     graph.DrawString(College, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Course, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Collegegraduated, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
@@ -226,20 +234,24 @@ namespace Resume_Creator
 
                     initialmiddle = initialmiddle + 200;
                     graph.DrawString("EXPERIENCE", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(NewLine, marginleft, initialmiddle + 25, 300, 1);
                     graph.DrawString(Experience, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Contain, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Contain1, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Contain2, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    initialmiddle = initialmiddle + 100;
+                    initialmiddle = initialmiddle + 115;
                     graph.DrawString("ACHIEVEMENT", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(NewLine, marginleft, initialmiddle + 25, 300, 1);
                     graph.DrawString(Achievement, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Achievement1, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Achievement2, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Achievement3, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 75, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawString(Achievement4, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 90, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
 
-                    initialmiddle = initialmiddle + 100;
+                    initialmiddle = initialmiddle + 125;
                     graph.DrawString("SKILLS", bigfont, XBrushes.White, new XRect(marginleft, initialmiddle, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
+                    graph.DrawRectangle(NewLine, marginleft, initialmiddle + 25, 300, 1);
                     graph.DrawString(Skills1, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 30, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Skills2, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 45, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
                     graph.DrawString(Skills3, smallfont, XBrushes.White, new XRect(marginleft, initialmiddle + 60, page.Width.Point, page.Height.Point), XStringFormats.TopLeft);
